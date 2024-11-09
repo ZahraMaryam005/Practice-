@@ -1,0 +1,293 @@
+h1 {
+    font-size: 50px;
+    line-height: 25px;
+    color: #088178;
+    padding-left: 10px;
+    padding-top: -3px;
+    margin-bottom: -1px;
+}
+
+h2  {
+    font-size: 64px;
+    line-height: 30px;
+    color: black;
+    padding-left: 10px;
+    margin-bottom: -5px;
+}
+
+#hero h4 { 
+    font-size: 30px;
+    color: black;
+    padding-left: 20px;
+    margin-bottom: -35px;
+}
+
+p {
+    font-size: 20px;
+    padding-left: 10px;
+    padding-top: 25px;
+    color: gray;
+}
+
+button {
+    padding-left: -35px;
+    padding-bottom: 2px;
+}
+
+/*.....hepader.....*/
+#header {
+    width: 95%;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background-color: black;
+    box-shadow: 15px 6cap 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position:sticky;
+    top: 0;
+    left: 0;
+    border: 8px solid black;
+    border-radius: 5px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+    font-size: medium;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #088178;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+   content: "";
+   width:30% ;
+   height: 2px;
+   background-color: #088178;
+   position: absolute;
+   bottom: -14px;
+   left: 20px;
+}
+
+/*......Home page....*/
+#hero {
+    background-image: url(homepg/SharedScreenshot.jpg);
+    height: 150vh;
+    width: 99%;
+    background-position: top 0px right 0px ; 
+    background-size: cover;
+    padding:10px;
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 5px;
+    font-family: cursive;
+    border: none;
+    border-radius: 10px;
+}
+#hero h4 {
+    padding-bottom: 1px;
+}
+ 
+#hero h1 {
+    color:#088178 ;
+}
+
+#hero button {
+    background-image: url(buttonbg/SharedScreenshot.jpg);
+    background-color: transparent;
+    color: #088178;
+    border: none;
+    padding: 30px 80px 30px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+}
+#feature { 
+    border: 2px solid whitesmoke;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    box-shadow: 15px 15px 35px rgba(0, 0, 0, 0.03);
+}
+
+/*...#feature:hover{
+    border: 5px solid white;
+    margin-top: 10px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.02);
+}...*/
+
+#feature img {
+    padding: 0px;
+    margin: 0px;
+
+}
+
+#feature .fe-box{
+    width: 15%;
+    text-align: center;
+    padding: 0px 10px;
+    border: 2px solid whitesmoke;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    margin: 30px;
+    border-radius: 8px;
+
+    
+}
+
+#feature .fe-box:hover {
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+
+}
+
+/*...#feature .fe-box {
+    width: 180px;
+    text-align:start;
+    padding: -300px -300px;
+    box-shadow: 50px 6cap 44px rgba(0, 0, 0, 0.03);
+    border: 1px solid black;
+    border-radius: 4px;
+    margin: -15px 0px;
+}.....*/
+
+#feature .fe-box h6 {
+    font-size: 14px;
+    padding: 5px 5px 6px 5px;
+    line-height: 1;
+    border: 5px solid darkorange;
+    border-radius: 4px;
+    color: white;
+    background-color: darkorange;
+    display: inline-block;
+    margin-top: -2px;
+}
+
+#feature .fe-box h6:hover {
+    background-color: black;
+    border: 6px solid black;
+}
+
+#product1 {
+    text-align: center;
+}
+
+#product1 h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 70px;
+    transition: 0.2s ease;
+}
+
+#product1 h2:hover {
+    font-size:75px ;
+}
+
+#product1 p:hover {
+    font-size: 30px;
+    color: black;
+}
+#product1 .pro {
+    width: 1%;
+    min-width: 250px;
+    padding: 15px 8px;
+    border: 2px solid whitesmoke;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 30px;
+    transition: 0.2s ease;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+}
+
+#product1 .pro:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+
+}
+
+#product1 .pro img {
+    width: 98%;
+    border-radius: 20px;
+}
+
+#product1 .pro .des {
+    text-align: start;
+    padding: 10px 0px;
+}
+
+#product1 .pro .des span {
+ font-size: 15px;
+}
+
+#product1 .pro .des h5 {
+    padding-top: 15px;
+    font-size: 25px;
+    color: black;
+}
+
+#product1 .pro .bag {
+width: 40px;
+height: 40px;
+line-height: 40px;
+border-radius: 50px;
+background-color: #e8f6ea;
+color: #088178;
+margin-top: -20px;
+position: absolute;
+bottom: 20px;
+right: 10px;
+}
+
+#product1 .pro-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+.section-m1{
+    margin: 40px 0px;
+}
+
+#banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(banner.webp);
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#banner button {
+    margin-top: 250px;
+    background-color: lightyellow;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: cursive;
+    box-shadow: 40px 40cap 64px rgba(0, 0, 0, 0.03);
+}
